@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nome Limpo Já: orientação e atendimento para quem deseja organizar suas pendências financeiras e conhecer caminhos de negociação.">
+  <meta name="theme-color" content="#0756a5">
+  <title>Nome Limpo Já | Organize sua vida financeira</title>
+  <style>
+    :root{--blue:#0756a5;--blue-dark:#073b70;--green:#159447;--green-dark:#087b38;--yellow:#f4c52e;--ink:#17324d;--muted:#526579;--paper:#f4f7f5;--line:#dce5e9;--white:#fff;--shadow:0 14px 40px rgba(12,48,80,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.55}a{color:inherit}.topline{height:7px;background:linear-gradient(90deg,var(--green) 0 33.3%,var(--yellow) 33.3% 66.6%,var(--blue) 66.6%)}
+    .container{width:min(1120px,calc(100% - 36px));margin:auto}.govbar{background:#f1f4f6;border-bottom:1px solid #d9e0e4;font-size:12px;color:#3f5365}.govbar .container{padding:8px 0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 2px 12px #1232}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;letter-spacing:-1px;font-size:25px;color:var(--blue)}.brand>span{color:var(--blue)}.brand>span>span{color:var(--green)}.brand img{width:44px;height:44px;object-fit:contain;flex:none}.brand small{display:block;font-size:10px;letter-spacing:1.4px;color:#6b7c8b;font-weight:700;margin-top:-4px}.menu{display:flex;align-items:center;gap:25px}.menu a{text-decoration:none;font-size:14px;font-weight:700;color:#29445e}.menu a:hover{color:var(--green)}.menu .nav-cta{background:var(--green);color:white;padding:11px 17px;border-radius:8px}.hamb{display:none;background:none;border:0;font-size:26px;color:var(--blue);cursor:pointer}
+    .hero{background:linear-gradient(135deg,#eef6fb,#f4f8f4);padding:34px 0 48px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green-dark);font-weight:800;font-size:12px;letter-spacing:1px;text-transform:uppercase;margin:0 0 14px}.eyebrow:before{content:"";width:24px;height:4px;border-radius:9px;background:var(--yellow)}h1{font-size:clamp(30px,5vw,48px);line-height:1.08;letter-spacing:-1.4px;margin:0 0 14px;color:var(--blue-dark)}.hero-intro{max-width:700px;color:var(--muted);font-size:17px;margin:0 auto 26px;text-align:center}.hero h1{text-align:center}.hero .eyebrow{display:flex;justify-content:center}.promo-wrap{max-width:1000px;margin:0 auto;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);background:#fff}.promo-wrap img{display:block;width:100%;height:auto}.promo-link{display:block;position:relative;text-decoration:none}.promo-action{position:absolute;left:50%;bottom:6%;transform:translateX(-50%);background:var(--green);color:#fff;font-weight:900;font-size:clamp(14px,2.3vw,20px);letter-spacing:.3px;padding:17px 34px;border:3px solid #fff;border-radius:12px;box-shadow:0 7px 0 var(--green-dark),0 8px 22px rgba(0,0,0,.28);text-align:center;white-space:nowrap;text-shadow:0 1px 1px rgba(0,0,0,.15);transition:filter .15s,transform .15s}.promo-link:hover .promo-action{filter:brightness(1.12);transform:translateX(-50%) translateY(-3px)}.promo-link:focus-visible .promo-action{outline:4px solid var(--yellow);outline-offset:4px}@media(max-width:520px){.promo-action{font-size:12px;padding:11px 16px;border-width:2px;border-radius:8px;bottom:5%}}.promo-caption{padding:13px 18px;background:#fff;text-align:center;font-size:12px;color:#536679}.promo-caption strong{color:var(--blue)}
+    .trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}.trust{background:white;border:1px solid var(--line);border-radius:12px;padding:17px;display:flex;gap:12px;align-items:center}.trust-icon{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#e8f6ed;color:var(--green);font-size:20px;flex:none}.trust b{display:block;font-size:14px}.trust small{color:var(--muted);font-size:12px}
+    section{padding:65px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 32px}.section-head h2{font-size:clamp(25px,3vw,34px);line-height:1.15;color:var(--blue-dark);margin:0 0 10px}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:24px;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:0 5px 20px #163c5b0a}.card .ico{font-size:25px;margin-bottom:10px}.card h3{margin:0 0 8px;font-size:18px;color:var(--blue-dark)}.card p{margin:0;color:var(--muted);font-size:14px}.how{background:var(--paper)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{background:#fff;padding:23px;border-radius:14px;border-top:4px solid var(--green)}.number{font-weight:900;color:var(--green);font-size:13px;letter-spacing:1px}.step h3{margin:8px 0;color:var(--blue-dark)}.step p{margin:0;color:var(--muted);font-size:14px}
+    .notice{margin:28px auto 0;max-width:900px;border-left:4px solid var(--yellow);background:#fff9df;padding:16px 18px;border-radius:8px;color:#5c4b16;font-size:13px}.cta-band{background:var(--blue);color:#fff;text-align:center;padding:48px 20px}.cta-band h2{font-size:clamp(25px,4vw,36px);margin:0 0 10px}.cta-band p{margin:0 auto 22px;max-width:650px;color:#e4eef8}.button{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-weight:800;padding:14px 22px;border-radius:9px;box-shadow:0 5px 0 var(--green-dark);transition:transform .15s}.button:hover{transform:translateY(-2px)}
+    .faq{max-width:850px;margin:auto}.faq details{border:1px solid var(--line);border-radius:10px;padding:17px 19px;margin:10px 0;background:#fff}.faq summary{cursor:pointer;font-weight:800;color:var(--blue-dark)}.faq details p{color:var(--muted);font-size:14px;margin:12px 0 0}.contact-box{max-width:760px;margin:auto;background:#f2f7fb;border-radius:16px;padding:30px;text-align:center}.contact-box p{color:var(--muted)}
+    footer{background:#082f56;color:#eaf2f8;padding:36px 0 22px}.footgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px}.footgrid h3{margin:0 0 10px;color:#fff}.footgrid p,.footgrid a{font-size:13px;color:#d3e1ec}.footgrid a{display:block;text-decoration:none;margin:7px 0}.copyright{border-top:1px solid #ffffff2c;margin-top:25px;padding-top:17px;font-size:12px;color:#c1d3e2}.legal{font-size:11px;color:#c1d3e2;max-width:850px;margin-top:12px}
+    @media(max-width:760px){.menu{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:18px;box-shadow:0 10px 15px #1232;flex-direction:column;align-items:stretch;gap:15px}.menu.open{display:flex}.menu .nav-cta{text-align:center}.hamb{display:block}.trust-row,.cards,.steps{grid-template-columns:1fr}.hero{padding-top:25px}.hero-intro{font-size:15px}.promo-wrap{border-radius:10px}.footgrid{grid-template-columns:1fr}.trust{padding:14px}.nav{min-height:68px}.menu{top:68px}}
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <div class="govbar"><div class="container"><span>Nome Limpo Já • Atendimento digital</span><span>Informação clara e transparência em primeiro lugar</span></div></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Nome Limpo Já - início"><img src="logo-nome-limpo.png" alt=""><span>NOME LIMPO <span>JÁ</span><small>ORIENTAÇÃO FINANCEIRA</small></span></a>
+      <button class="hamb" id="hamb" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="menu" id="menu" aria-label="Menu principal">
+        <a href="#servicos">Soluções</a><a href="#como-funciona">Como funciona</a><a href="#duvidas">Dúvidas</a><a class="nav-cta" href="#contato">Fale conosco</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Um novo começo para sua vida financeira</p>
+        <h1>Organize suas pendências.<br>Retome o controle da sua vida.</h1>
+        <p class="hero-intro">Conheça caminhos para entender suas dívidas, avaliar possibilidades de negociação e dar o próximo passo com mais informação.</p>
+        <div class="promo-wrap">
+          <a class="promo-link" href="pagamento.html" aria-label="Aproveitar a oferta de atendimento por R$ 29,90">
+            <img src="banner-promocao.png" alt="Promoção de atendimento Limpa Nome por R$ 29,90, com identidade visual azul, verde e amarela">
+            <span class="promo-action">APROVEITAR ESTA OFERTA</span>
+          </a>
+          <div class="promo-caption"><strong>Oferta de atendimento: R$ 29,90.</strong> Clique na imagem para ver as informações da contratação e do pagamento.</div>
+        </div>
+        <div class="trust-row">
+          <div class="trust"><div class="trust-icon">✓</div><div><b>Orientação clara</b><small>Entenda as etapas e opções disponíveis.</small></div></div>
+          <div class="trust"><div class="trust-icon">⌕</div><div><b>Atendimento digital</b><small>Converse com nossa equipe pelos canais informados.</small></div></div>
+          <div class="trust"><div class="trust-icon">♧</div><div><b>Transparência</b><small>Sem promessa de resultado garantido.</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div class="container">
+        <div class="section-head"><h2>Como podemos ajudar?</h2><p>Informação para você avaliar suas alternativas e tomar decisões com mais segurança.</p></div>
+        <div class="cards">
+          <article class="card"><div class="ico">📋</div><h3>Entenda suas pendências</h3><p>Organize as informações sobre suas dívidas e saiba quais dados verificar antes de negociar.</p></article>
+          <article class="card"><div class="ico">🤝</div><h3>Avalie possibilidades</h3><p>Conheça opções de negociação oferecidas diretamente pelos credores e plataformas autorizadas.</p></article>
+          <article class="card"><div class="ico">🔎</div><h3>Próximos passos</h3><p>Receba orientação sobre como acompanhar propostas, pagamentos e atualizações cadastrais.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="como-funciona">
+      <div class="container">
+        <div class="section-head"><h2>Um passo de cada vez</h2><p>O processo deve ser simples, informado e sem surpresas.</p></div>
+        <div class="steps">
+          <article class="step"><span class="number">ETAPA 01</span><h3>Entre em contato</h3><p>Fale com a equipe e tire suas dúvidas sobre o serviço e o valor anunciado.</p></article>
+          <article class="step"><span class="number">ETAPA 02</span><h3>Confira as informações</h3><p>Entenda o que está incluído, quais dados serão necessários e quais são os limites do atendimento.</p></article>
+          <article class="step"><span class="number">ETAPA 03</span><h3>Avalie suas opções</h3><p>Compare as condições oferecidas pelo credor antes de aceitar qualquer acordo ou realizar pagamentos.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="duvidas">
+      <div class="container">
+        <div class="section-head"><h2>Perguntas frequentes</h2><p>Veja informações importantes antes de contratar.</p></div>
+        <div class="faq">
+          <details><summary>O que significa a oferta de R$ 29,90?</summary><p>É o valor anunciado para o serviço de atendimento/orientação. Antes de publicar, descreva com precisão o que esse serviço inclui, o prazo e as condições de contratação.</p></details>
+          <details><summary>O pagamento de R$ 29,90 quita minha dívida?</summary><p>Não. Esse valor não representa o pagamento ou a quitação de dívidas com bancos, lojas ou outros credores. Eventuais acordos são feitos conforme as condições apresentadas pelo credor.</p></details>
+          <details><summary>Meu nome será limpo imediatamente?</summary><p>Você pode dar um passo importante para recuperar sua tranquilidade financeira. Após a regularização da pendência, o credor realizará os procedimentos necessários para atualizar as informações nos cadastros de crédito, respeitando os prazos aplicáveis.</p></details>
+          <details><summary>Vocês garantem aumento do score?</summary><p>Não. A pontuação de crédito é calculada por birôs de crédito com base em critérios próprios. Nenhum atendimento pode garantir aumento de score.</p></details>
+          <details><summary>Preciso informar minha senha bancária?</summary><p>Não compartilhe senhas, códigos de autenticação ou dados completos de cartão. Desconfie de qualquer solicitação desse tipo.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" id="contato">
+      <div class="container"><h2>Quer entender suas opções?</h2><p>Entre em contato para conhecer o atendimento, confirmar o que está incluído na oferta e esclarecer suas dúvidas antes de contratar.</p><a class="button" href="mailto:contato@nomelimpoja.com.br?subject=Quero%20saber%20sobre%20a%20oferta%20Nome%20Limpo%20J%C3%A1">Fale com a equipe</a></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footgrid">
+        <div><h3>NOME LIMPO JÁ</h3><p>Atendimento e orientação para organização financeira. Este é um serviço privado e independente.</p></div>
+        <div><h3>Navegação</h3><a href="#servicos">Soluções</a><a href="#como-funciona">Como funciona</a><a href="#duvidas">Perguntas frequentes</a></div>
+        <div><h3>Contato</h3><a href="mailto:contato@nomelimpoja.com.br">contato@nomelimpoja.com.br</a><a href="#contato">Atendimento</a></div>
+      </div>
+      <div class="legal">O NOME LIMPO JÁ é uma iniciativa privada de orientação financeira, independente do Governo Federal, GOV.BR e Serasa.</div>
+      <div class="copyright">© <span id="year"></span> Nome Limpo Já. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+  <script>
+    const hamb=document.getElementById('hamb');const menu=document.getElementById('menu');
+    hamb.addEventListener('click',()=>{const open=menu.classList.toggle('open');hamb.setAttribute('aria-expanded',String(open));hamb.textContent=open?'✕':'☰'});
+    menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{menu.classList.remove('open');hamb.setAttribute('aria-expanded','false');hamb.textContent='☰'}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
